@@ -18,15 +18,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: join(__dirname, "public/index.html"),
         }),
-        // new VueLoaderPlugin()
+        new VueLoaderPlugin()
+        // new VueLoaderPlugin({
+        //     template: join(__dirname, "src/app.vue"),
+        // })
     ],
-    plugins: [
-        [
-            new VueLoaderPlugin({
-                template: join(__dirname,"src/app.vue"),
-            })
-        ]
-    ],
+    // plugins: [
+    //     [
+    //         new VueLoaderPlugin({
+    //             template: join(__dirname, "src/app.vue"),
+    //         })
+    //     ]
+    // ],
     devServer: {
         open: true,
         port: 8080

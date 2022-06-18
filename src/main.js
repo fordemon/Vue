@@ -1,14 +1,12 @@
 import { marquee } from './marquee.js'
 import { tab } from './tab.js'
-// import { app } from './app.vue'
+import  app  from '../src/app.vue'
 
-// app.vue()
 tab()
 marquee()
 
 import './styles/index.css'
 import './styles/index.less'
-import './src/app.vue'
 
 import gifSrc from './assets/1.gif'
 import pngSrc from './assets/logo_small.png'  
